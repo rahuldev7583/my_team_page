@@ -1,0 +1,50 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30px;
+}
+.header p{
+  width: 90%;
+}
+.grid-container{
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-container p{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.item2, .item4, .item6{
+  margin-top: 30px;
+}
+img{
+  width: 70%;
+}
+span{
+  writing-mode: vertical-rl;
+}
+@media (min-width:768px){
+  .header{
+    flex-direction: row;
+  }
+  .header h1{
+    width: 50%;
+    font-size: 2rem;
+  }
+  .head-intro{
+    width: 50%;
+  }
+  .grid-container{
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 1fr);
+  }
+  .item2{
+    margin-top: 4rem;
+    }
+    .item5{
+    margin-top: 6rem;
+  }
+}
