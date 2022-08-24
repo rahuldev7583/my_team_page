@@ -24,7 +24,15 @@ img{
   width: 70%;
 }
 span{
+  position: absolute;
   writing-mode: vertical-rl;
+  margin-top: 5px;
+}
+.bottom{
+  text-align: center;
+}
+.bottom a{
+  color: black;
 }
 @media (min-width:768px){
   .header{
@@ -46,5 +54,8 @@ span{
     }
     .item5{
     margin-top: 6rem;
+  }
+  span{
+    font-size: 1.5rem;
   }
 }
